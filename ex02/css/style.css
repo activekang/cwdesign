@@ -1,0 +1,77 @@
+      /*reset*/
+	  * {margin:0;padding:0}
+	  body {color:#333;background:#f2f2f2}
+	  li {list-style:none}
+	  a {text-decoration:none}
+	  img {vertical-align:top}
+	  
+	  /*layout*/
+	  #wrap {margin:0 auto;width:1000px;background:#eee;position:relative}
+	 
+	  #header {width:250px;height:600px;float:left} 
+	  #header:after {content:'';display:block;clear:both}
+	
+	  #container {float:left;width:750px}
+
+	  #container #visual {height:350px}
+
+	  #container #contents {height:200px;width:750px}
+	   #contents .cont1,
+	   #contents .cont2,
+	   #contents .cont3 {float:left;width:33%}
+	 
+	  #container #footer {height:100px;width:750px}
+      
+	  /*header*/
+	  #header h1 {text-align:center}
+	  #header #gnb {position:absolute;left:0;top:50px;width:250px;}
+      #header #gnb dt {width:240px;border-bottom:1px solid #999;
+	  padding:10px 0;background:#3cf;font-size:20px;font-weight:bold;cursor:pointer;text-align:center}
+	  #header #gnb dd {display:none;width:240px}
+	  #header #gnb dd ul{background:#eee}
+	  #header #gnb dd ul li {padding:20px;border-bottom:1px solid #ccc;text-align:center}
+	  #header #gnb dd ul li:hover{background:#ccc}
+	  .on {display:block}
+
+	  /*popup*/
+	  .popup {position:relative;width:300px;height:240px;background:#ff9;
+	  position:absolute;left:40%;top:25%;display:none;z-index:30; }
+      .close {position:absolute;right:10px;bottom:10px}
+
+      /* slider */
+	  #visual .img-box{
+		width: 750px; height: 350px;
+		margin: auto; margin-top: 10px;
+	  }
+	  #visual .img-box img{
+		width: 750px; height: 350px; position:absolute;
+	  }
+	  #visual .act{z-index: 10 !important;}
+
+
+      /* notice */
+	  .tit{text-indent: 20px;font-size:18px}
+      .notice{float:left;width:250px;background: #eee;}
+      .notice li{width:100%;list-style: none;}
+      .notice li a{font-family: "돋움";font-size: 12px;color: #666;text-decoration: none;}
+      .notice li a:hover,a:focus{color: #ff0000;}
+      .notice li{background: url(../images/blist1.gif) no-repeat 10px 50%;text-indent: 20px;}
+     
+	  /*gallery*/
+      .gallery{float:left;width:250px;background:#eee;}
+      .gallery li {float:left;width:33%;height:150px;margin-right:0.3%}
+      .gallery li img {width:100%;height:100%;
+		 opacity:0.5;
+		 transition:all 0.5s}
+		.gallery li img:hover {opacity:1}
+  
+      /*banner*/
+      .cont3 {float:left;margin:0 auto}
+      .cont3 p {text-align:center}
+	  .cont3 p img {width:100%}
+   
+	  /*footer*/
+      #footer {clear:left;width:100%;background:#ccc}
+	  #footer .flogo {float:left;width:20%;height:100px;line-height:100px;text-align:center}
+	  #footer .fbox .fmenu {float:none;height:50px;line-height:50px;text-align:center}
+	  #footer .fbox .fcopy {height:50px;line-height:50px;text-align:center}

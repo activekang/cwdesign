@@ -1,0 +1,4 @@
+@charset "utf-8";
+
+.gnb{z-index: -10;}
+.gnb>ul>li>a:hover{background-color: #fc0;}

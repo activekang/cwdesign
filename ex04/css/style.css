@@ -1,0 +1,77 @@
+/*reset*/
+* {margin:0;padding:0}
+body {color:#333;background:#f2f2f2}
+li {list-style:none}
+a {text-decoration:none}
+img {vertical-align:top}
+
+/*layout*/
+#header {height:100px;background:#ddd}
+#visual {margin:0 auto;width:1200px;height:300px}
+#contents {margin:0 auto;width:1200px;height:200px}
+#contents .cont1,
+#contents .cont2,
+#contents .cont3 {float:left;width:33.33%;height:200px}
+#footer {height:100px}
+#footer .inner {margin:0 auto;width:1200px}
+
+/*header*/
+#header .inner {margin:0 auto;width:1200px;
+ height:100px;position:relative;background:#eee}
+#header .inner h1 {position:absolute;left:0;top:20px}
+
+#header .inner #gnb {position:absolute;right:20px;top:50px;width:800px}
+#header .inner #gnb .main {
+ position:relative;float:left;width:200px;
+ height:44px;line-height:44px;margin:0;text-align:center;
+ border:1px solid #ccc;box-sizing:border-box
+}
+#header .inner #gnb .main a {display:block;}
+#header .inner .sub {position:absolute;left:0;top:44px;width:200px;height:40px;
+display:none;z-index:20}
+#gnb .sub li {width:200px;height:40px;line-height:40px;
+       background:#fe0}
+/*#gnb .main:hover .sub {display:block}*/
+#gnb .sub li:hover {background:#f90;color:#fff}
+
+ /*popup*/
+ .popup {position:relative;width:300px;height:240px;background:#ff9;
+          position:absolute;left:40%;top:25%;display:none;z-index:30; }
+ .close {position:absolute;right:10px;bottom:10px}
+
+    
+  /*tablist*/
+
+ .cont1 {width:100%;margin:0 auto}
+
+  ul.tabs {margin:0;padding:0;list-style:none}
+  ul.tabs li {background:none;color:#222;display:inline-block;padding:10px 15px;
+			cursor:pointer;
+			}
+  ul.tabs li.current {background:#ddd;color:#222} 
+  .tab-content {display:none;width:100%;background:#ddd;padding:10px 0}
+  .tab-content:after {content:'';display:block;clear:both}
+  .tab-content ul li {display:inline-block;float:none;width:100%} 
+  .tab-content ul li > a{float:left;margin-left:10px}
+  .tab-content ul li > span{float:right;margin-right:10px}
+  .tab-content.current {display:block}
+
+  /*gallery*/
+  .cont2 {width:100%;margin:0 auto}
+  .gallery{width:400px;background: #eee;}
+  .gallery li {float:left;width:33%;height:150px;padding-top:20px;margin-right:0.3%}
+  .gallery li img {width:100%;height:100%;opacity:0.5; transition:all 0.5s}
+  .gallery li img:hover {opacity:1}
+  
+  /*banner*/
+  .cont3 {margin:0 auto;height:200px;line-height:200px}
+  .cont3 ul li {text-align:center;width:400px;height:60px;padding-top:5px}
+  .cont3 ul li a img {width:70%;height:100%;vertical-align:top}
+   
+ /*footer*/
+ #footer {background:#ccc}
+ #footer .flogo {float:left;width:200px;height:100px;background:#bbb;
+ line-height:100px;text-align:center}
+ #footer .fcopy {float:left;width:800px;height:100px;line-height:100px;text-align:center}
+ #footer .fsns {float:right;width:200px;height:100px;line-height:100px;text-align:center;background:#bbb;}
+ 

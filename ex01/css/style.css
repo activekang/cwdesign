@@ -1,0 +1,76 @@
+  /*reset*/
+	  * {margin:0;padding:0}
+	  body {color:#333;background:#f2f2f2}
+	  li {list-style:none}
+	  a {text-decoration:none}
+	  img {vertical-align:top}
+	  
+	  /*layout*/
+	  #wrap {margin:0 auto;width:1200px;background:#eee}
+	  #header {height:100px;position:relative}
+	  
+	  #visual {height:300px}
+	  #contents {height:200px}
+	  #contents .cont1,#contents .cont2,#contents .cont3 {float:left;width:33.33%}
+	  #footer {height:100px}
+      
+	  /*header*/
+	  #header h1 {position:absolute;left:0;}
+	
+	  #header #gnb {position:absolute;right:20px;top:50px;width:800px;}
+
+      #gnb .main {position:relative;float:left;width:200px;height:44px;line-height:44px;margin:0;text-align:center;border:1px solid #ccc;box-sizing:border-box}
+
+	  #gnb .sub {position:absolute;left:0px;top:44px;width:200px;height:40px;display:none;z-index:20;} /*z-index: 20;추가*/
+	  #gnb .sub li {width:200px;height:40px;line-height:40px;background:#0ef}
+	  
+	  #gnb .main:hover .sub {display:block;}
+
+	  #gnb .sub li:hover {background:#f90;color:#fff;font-weight:bold}
+
+       /*popup*/
+	  .popup {position:relative;width:300px;height:240px;background:#ff9;
+	  position:absolute;left:40%;top:25%;display:none;z-index:30; }
+      .close {position:absolute;right:10px;bottom:10px}
+
+       /* slider */
+		#visual .img-box{
+			width: 1200px; height: 300px;
+			margin: auto; margin-top: 10px;
+		}
+		#visual .img-box img{
+			width: 1200px; height: 300px; position:absolute;
+		}
+		#visual .act{z-index: 10 !important;}
+
+
+       /* notice */
+		.tit{text-indent: 20px;font-size:18px}
+
+        .notice{width: 350px;background: #eee;}
+        li{list-style: none;}
+        a{font-family: "돋움";font-size: 12px;color: #666;text-decoration: none;}
+        a:hover,a:focus{color: #ff0000;}
+        .notice li{background: url(../images/blist1.gif) no-repeat 10px 50%;text-indent: 20px;}
+     
+	   /*gallery*/
+    
+		.gallery{width: 400px;background: #eee;}
+        .gallery li {float:left;width:33%;height:150px;margin-right:0.3%}
+        .gallery li img {width:100%;height:100%;
+		 opacity:0.5;
+		 transition:all 0.5s}
+		.gallery li img:hover {opacity:1}
+  
+       /*banner*/
+       .cont3 {margin:0 auto;width:33%}
+       .cont3 p {text-align:center}
+	   .cont3 p img {width:50%;}
+   
+	 /*footer*/
+     #footer {background:#ccc}
+	 #footer .flogo {float:left;width:200px;height:100px;line-height:100px;text-align:center}
+	 #footer .fbox {float:left;width:1000px;background:#ddd}
+	 #footer .fbox .fmenu {height:50px;line-height:50px;text-align:center}
+	 #footer .fbox .fcopy {height:50px;line-height:50px;text-align:center}
+ 
